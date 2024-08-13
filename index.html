@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon-32x32.png" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Todo app</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="container__todo">
+        <div class="container__header">
+          <h1>TODO</h1>
+          <img src="images/icon-moon.svg" alt="moon" class="moon" />
+          <img src="images/icon-sun.svg" alt="sun" class="sun" />
+        </div>
+        <div class="container__input">
+          <div class="round"><i class="ri-add-line"></i></div>
+          <input
+            type="text"
+            placeholder="Create a new todo..."
+            class="border-none"
+          />
+        </div>
+        <div class="container__list remove">
+          <div class="container__list--task">
+            <div class="flex">
+              <div class="click">
+                <img src="images/icon-check.svg" alt="check" />
+              </div>
+              <span class="todo">Complete online Javascript course</span>
+            </div>
+            <img src="images/icon-cross.svg" alt="cross" />
+          </div>
+          <div class="container__list--task">
+            <div class="flex">
+              <div class="click">
+                <img src="images/icon-check.svg" alt="check" />
+              </div>
+              <span class="todo">Jog around the 3x</span>
+            </div>
+            <img src="images/icon-cross.svg" alt="cross" />
+          </div>
+          <div class="container__list--task">
+            <div class="flex">
+              <div class="click">
+                <img src="images/icon-check.svg" alt="check" />
+              </div>
+              <span class="todo">10 minutes meditation</span>
+            </div>
+            <img src="images/icon-cross.svg" alt="cross" />
+          </div>
+          <div class="container__list--task">
+            <div class="flex">
+              <div class="click">
+                <img src="images/icon-check.svg" alt="check" />
+              </div>
+              <span class="todo">Pick up groceries</span>
+            </div>
+            <img src="images/icon-cross.svg" alt="cross" />
+          </div>
+          <div class="container__list--task">
+            <div class="flex">
+              <div class="click">
+                <img src="images/icon-check.svg" alt="check" />
+              </div>
+              <span class="todo">Complete Todo App on Frontend Mentor</span>
+            </div>
+            <img src="images/icon-cross.svg" alt="cross" />
+          </div>
+          <div class="container__list--task no-border">
+            <div>
+              <span class="fade"><span class="count">5</span> items left</span>
+            </div>
+            <div class="nav">
+              <span class="current-page fade all">All</span>
+              <span class="fade active__todo">Active</span>
+              <span class="fade">Completed</span>
+            </div>
+            <div class="fade">Clear Completed</div>
+          </div>
+        </div>
+        <div class="container__active container__list">
+          <div class="container__list--task no-border">
+            <div>
+              <span class="fade"><span class="count">5</span> items left</span>
+            </div>
+            <div class="nav">
+              <span class="fade all">All</span>
+              <span class="fade active__todo current-page">Active</span>
+              <span class="fade">Completed</span>
+            </div>
+            <div class="fade">Clear Completed</div>
+          </div>
+        </div>
+        <div class="container__nav">
+          <span class="current-page fade all">All</span>
+          <span class="fade active__todo">Active</span>
+          <span class="fade">Completed</span>
+        </div>
+        <div class="footer"><p>Drag and drop to recorder list</p></div>
+      </div>
+    </main>
+  </body>
+</html>

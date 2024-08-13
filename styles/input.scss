@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+$bright-blue: hsl(220, 98%, 61%);
+$check-background: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+
+// LIGHT THEME
+$very-light-gray: hsl(0, 0%, 98%);
+$very-light-grayish-blue: hsl(236, 33%, 92%);
+$light-grayish-blue: hsl(233, 11%, 84%);
+$dark-grayish-blue: hsl(236, 9%, 61%);
+$very-dark-grayish-blue: hsl(235, 19%, 35%);
+
+//DARK THEME
+$very-dark-blue: hsl(235, 21%, 11%);
+$very-dark-desaturated-blue: hsl(235, 24%, 19%);
+$light-grayish-blue: hsl(234, 39%, 85%);
+$light-grayish-blue-hover: hsl(236, 33%, 92%);
+$dark-grayish-blue: hsl(234, 11%, 52%);
+$very-dark-grayish-blue: hsl(233, 14%, 35%);
+$Very-dark-grayish-blue: hsl(237, 14%, 26%);
+
+body {
+  background-color: $very-light-grayish-blue;
+  font-family: "League Spartan", sans-serif;
+
+}
+
+main {
+  background-image: url("/images/bg-mobile-light.jpg");
+  background-repeat: no-repeat;
+}
+.fade {
+  color: $dark-grayish-blue;
+  cursor: pointer;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.container__todo {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  margin-top: 30px;
+  color: $Very-dark-grayish-blue;
+  font-size: 13px;
+}
+.container__header {
+  display: flex;
+  justify-content: space-between;
+  h1 {
+    color: $very-light-gray;
+    letter-spacing: 15px;
+  }
+  img {
+    height: 20px;
+  }
+}
+.container__input {
+  background-color: $very-light-gray;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  display: flex;
+  column-gap: 15px;
+  padding: 15px;
+  margin-top: 30px;
+
+  input {
+    border: none;
+    background-color: transparent;
+    color: $dark-grayish-blue;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 600;
+    width: 100%;
+  }
+
+  input:focus {
+    outline: none;
+  }
+}
+
+.round {
+  height: 20px;
+  width: 20px;
+  border: 1px solid $light-grayish-blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.container__list {
+  background-color: $very-light-gray;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.container__list--task {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  column-gap: 10px;
+  border-bottom: 1px solid $light-grayish-blue;
+  img {
+    height: 16px;
+    cursor: pointer;
+  }
+  span {
+    margin-left: 10px;
+  }
+}
+
+.no-border {
+  border-bottom: none;
+}
+
+.container__nav {
+  display: flex;
+  column-gap: 20px;
+  justify-content: center;
+  background-color: $very-light-gray;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  span {
+    cursor: pointer;
+  }
+}
+
+.current-page {
+  color: $bright-blue;
+  font-weight: 600;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 15px;
+}
+
+.click {
+  width: 20px;
+  border-radius: 100%;
+  height: 20px;
+  cursor: pointer;
+  border: 1px solid $light-grayish-blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    height: 10px;
+    display: none;
+  }
+}
+
+.click:hover {
+  border: 1px solid #9e83f7;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.clicked {
+  background-image: linear-gradient(
+    to bottom,
+    hsl(192, 100%, 67%),
+    hsl(280, 87%, 65%)
+  );
+  img {
+    display: initial;
+  }
+
+}
+
+.nav {
+  display: none;
+}
+
+
+.dark_body {
+  background-color: $very-dark-blue;
+}
+
+.dark_bg {
+  background-image: url('/images/bg-desktop-dark.jpg');
+}
+
+.dark_todo {
+  color: $light-grayish-blue;
+  background-color: $very-dark-desaturated-blue;
+  box-shadow: rgba(0, 0, 0, 0.623) 0px 8px 24px;
+
+}
+
+
+.list--task_dark {
+  border-bottom: 1px solid $Very-dark-grayish-blue;
+}
+
+
+.click_dark {
+  border: 1px solid $very-dark-grayish-blue;
+}
+
+.sun {
+  display: none;
+}
+
+.sun,
+.moon {
+  cursor: pointer;
+}
+
+.container__active {
+  display: none;
+}
+
+
+i {
+  color: $dark-grayish-blue;
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 377px) {
+  main {
+    background-size: 100%;
+  }
+}
+
+@media (min-width: 620px) {
+  main {
+    background-image: url("/images/bg-desktop-light.jpg");
+  }
+  .dark_bg {
+    background-image: url("/images/bg-desktop-dark.jpg");
+  }
+}
+
+@media (min-width: 960px) {
+  .container__todo {
+    font-size: 18px;
+    width: 40%;
+  }
+
+  .container__input {
+    input {
+        font-size: 18px;
+
+    }
+  }
+
+  .container__nav {
+    display: none;
+  }
+
+  .nav {
+    display: initial;
+  }
+
+  
+
+  
+}

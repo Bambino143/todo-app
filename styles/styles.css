@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(236, 33%, 92%);
+  font-family: "League Spartan", sans-serif;
+}
+
+main {
+  background-image: url("/images/bg-mobile-light.jpg");
+  background-repeat: no-repeat;
+}
+
+.fade {
+  color: hsl(234, 11%, 52%);
+  cursor: pointer;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.container__todo {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  margin-top: 30px;
+  color: hsl(237, 14%, 26%);
+  font-size: 13px;
+}
+
+.container__header {
+  display: flex;
+  justify-content: space-between;
+}
+.container__header h1 {
+  color: hsl(0, 0%, 98%);
+  letter-spacing: 15px;
+}
+.container__header img {
+  height: 20px;
+}
+
+.container__input {
+  background-color: hsl(0, 0%, 98%);
+  margin-bottom: 20px;
+  border-radius: 5px;
+  display: flex;
+  column-gap: 15px;
+  padding: 15px;
+  margin-top: 30px;
+}
+.container__input input {
+  border: none;
+  background-color: transparent;
+  color: hsl(234, 11%, 52%);
+  font-family: "League Spartan", sans-serif;
+  font-weight: 600;
+  width: 100%;
+}
+.container__input input:focus {
+  outline: none;
+}
+
+.round {
+  height: 20px;
+  width: 20px;
+  border: 1px solid hsl(234, 39%, 85%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.container__list {
+  background-color: hsl(0, 0%, 98%);
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.container__list--task {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  column-gap: 10px;
+  border-bottom: 1px solid hsl(234, 39%, 85%);
+}
+.container__list--task img {
+  height: 16px;
+  cursor: pointer;
+}
+.container__list--task span {
+  margin-left: 10px;
+}
+
+.no-border {
+  border-bottom: none;
+}
+
+.container__nav {
+  display: flex;
+  column-gap: 20px;
+  justify-content: center;
+  background-color: hsl(0, 0%, 98%);
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.container__nav span {
+  cursor: pointer;
+}
+
+.current-page {
+  color: hsl(220, 98%, 61%);
+  font-weight: 600;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 15px;
+}
+
+.click {
+  width: 20px;
+  border-radius: 100%;
+  height: 20px;
+  cursor: pointer;
+  border: 1px solid hsl(234, 39%, 85%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.click img {
+  height: 10px;
+  display: none;
+}
+
+.click:hover {
+  border: 1px solid #9e83f7;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.clicked {
+  background-image: linear-gradient(to bottom, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+.clicked img {
+  display: initial;
+}
+
+.nav {
+  display: none;
+}
+
+.dark_body {
+  background-color: hsl(235, 21%, 11%);
+}
+
+.dark_bg {
+  background-image: url("/images/bg-desktop-dark.jpg");
+}
+
+.dark_todo {
+  color: hsl(234, 39%, 85%);
+  background-color: hsl(235, 24%, 19%);
+  box-shadow: rgba(0, 0, 0, 0.623) 0px 8px 24px;
+}
+
+.list--task_dark {
+  border-bottom: 1px solid hsl(237, 14%, 26%);
+}
+
+.click_dark {
+  border: 1px solid hsl(233, 14%, 35%);
+}
+
+.sun {
+  display: none;
+}
+
+.sun,
+.moon {
+  cursor: pointer;
+}
+
+.container__active {
+  display: none;
+}
+
+i {
+  color: hsl(234, 11%, 52%);
+}
+
+@media (min-width: 377px) {
+  main {
+    background-size: 100%;
+  }
+}
+@media (min-width: 620px) {
+  main {
+    background-image: url("/images/bg-desktop-light.jpg");
+  }
+  .dark_bg {
+    background-image: url("/images/bg-desktop-dark.jpg");
+  }
+}
+@media (min-width: 960px) {
+  .container__todo {
+    font-size: 18px;
+    width: 40%;
+  }
+  .container__input input {
+    font-size: 18px;
+  }
+  .container__nav {
+    display: none;
+  }
+  .nav {
+    display: initial;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
